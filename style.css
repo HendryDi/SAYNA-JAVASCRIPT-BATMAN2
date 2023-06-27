@@ -1,0 +1,452 @@
+@font-face {
+  font-family: "font-h1med";
+  src: url(./Assets/fonts/Rajdhani-Medium.ttf);
+}
+@font-face {
+  font-family: "font-h2bold";
+  src: url(./Assets/fonts/Rajdhani-Bold.ttf);
+}
+@font-face {
+  font-family: "font-txt";
+  src: url(./Assets/fonts/SpaceGrotesk-Regular.ttf);
+}
+:root {
+  --yellow-color: #ffff00;
+  --yellow-light: #f8f184;
+  --blue: #19587d;
+  --red: #b11313;
+  --black2: #0d0e09;
+  --white: #fff;
+  --gradient-white: #eddebf69;
+  --gradient-red: #890009a6;
+  --gray-light: #c4c4c4;
+  --gradient-blue: #19587d57;
+}
+/* paramètres généraux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "font-h1med", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+header {
+  background: url(./Assets/img/Bathome1.png) center/cover;
+  background-color: #0a0a0a;
+  height: 800px;
+}
+body {
+  color: #ffffff;
+  background: #0a0a0a;
+  font-family: "font-txt", sans-serif;
+  font-weight: 300;
+}
+.up-bar {
+  border-top: #bcbbbd 1px solid;
+  position: relative;
+  top: 132px;
+  left: 102px;
+  width: 84%;
+}
+.left-bar {
+  border: #bcbbbd 1px solid;
+  position: relative;
+  right: 655px;
+  rotate: 90deg;
+}
+.right-bar {
+  border: #bcbbbd 1px solid;
+  position: relative;
+  left: 618px;
+  rotate: 90deg;
+}
+/* paramètres pour la partie header */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  margin-left: 45px;
+}
+nav ul a {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "font-h1med";
+  text-transform: uppercase;
+}
+nav ul a:hover {
+  color: var(--yellow-color);
+}
+.logo:hover {
+  filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg)
+    brightness(109%) contrast(104%);
+}
+.preambule {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+.titre {
+  margin: 30px 0;
+}
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 22px;
+  padding: 10px 30px;
+  background: linear-gradient(
+    80deg,
+    var(--gradient-white),
+    var(--gradient-red)
+  );
+  box-shadow: var(--black2) 3px 3px 40px;
+}
+
+/* design pour le scroll avec logo réseaux sociaux */
+.scroll {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  right: 90px;
+  top: 230px;
+}
+.scroll .social {
+  margin-top: 15px;
+}
+/* design pour la flèche bas */
+.flechebas {
+  display: block;
+  margin: 0 auto;
+  margin-left: 50%;
+}
+
+/* design pour les cartes batmanmovies */
+.movies {
+  font-family: "font-txt", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  margin: 80px 400px 80px 250px;
+}
+.movies h1 {
+  margin: 50px auto;
+}
+.actors {
+  font-size: 18px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.actors p {
+  font-size: 18px;
+}
+/* design pour batmannemesis */
+.nemesis {
+  margin-top: 50px;
+  margin-left: 250px;
+}
+.nemesis img {
+  height: 100px;
+  padding-left: 50px;
+}
+.p1 {
+  font-size: 18px;
+  text-align: justify;
+  margin: 50px 400px 50px 250px;
+}
+.persos {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+.persos p {
+  font-size: 18px;
+}
+/* design pour batmanallies */
+.bathome12 {
+  width: 10%;
+  margin-left: 70%;
+}
+
+.ally {
+  font-size: 18px;
+  text-align: justify;
+  margin: 50px 400px 50px 250px;
+}
+.ally h1 {
+  margin: 0 auto 50px auto;
+}
+.allies {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+/* design pour la justice league */
+.jl2017 {
+  text-align: justify;
+  margin: 50px 400px 50px 350px;
+}
+.jl2017 h1 {
+  margin: 50px auto;
+}
+.jl2017 p {
+  font-size: 18px;
+}
+.jl img {
+  width: 100%;
+}
+/* design de la partie multimédia */
+
+.multimedia {
+  position: relative;
+}
+.multimedia h1 {
+  margin: 80px 400px 80px 300px;
+}
+
+.left {
+  margin-left: 300px;
+  position: absolute;
+  margin-top: 5%;
+  background-color: transparent;
+  border: none;
+}
+.right {
+  position: absolute;
+  margin-left: 1200px;
+  margin-top: 5%;
+  background-color: transparent;
+  border: none;
+}
+.resume {
+  background-color: #727272;
+  height: 230px;
+  width: 500px;
+  display: flex;
+  margin: 50px 500px 100px 500px;
+  font-size: 12px;
+  font-family: "font-txt", sans-serif;
+  border-radius: 0 10px 10px 0;
+}
+.type {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.type h2 {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.title {
+  font-family: "font-h1med", sans-serif;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.yellow {
+  color: var(--yellow-color);
+}
+.history {
+  font-size: 10px;
+  text-align: left;
+  margin-top: 20px;
+}
+.trailer {
+  margin: 50px 250px;
+}
+/* design de la partie contact avec le formulaire */
+
+#contact {
+  background: linear-gradient(
+    60deg,
+    var(--gradient-white),
+    var(--gradient-blue)
+  );
+  padding: 70px 0;
+}
+.formulaire {
+  width: 50%;
+  margin: 0 auto;
+}
+.formulaire h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 10%;
+}
+.titre {
+  display: block;
+  margin: 25px 0;
+}
+.formulaire input[type="email"] {
+  display: block;
+  width: 80%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.379);
+  background-color: transparent;
+  padding: 5px 0;
+}
+.carré {
+  opacity: 50%;
+}
+.icon img {
+  transform: rotate(90deg);
+  width: 20px;
+}
+.ligne3 {
+  margin: 15px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.379);
+  width: 80%;
+  opacity: 50%;
+}
+.ligne4 {
+  margin: 15px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.379);
+  width: 80%;
+}
+.btn-group {
+  padding: 10px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  width: 70%;
+}
+.btn-group input[type="radio"] {
+  opacity: 0;
+}
+.btn-group label {
+  cursor: pointer;
+  border: 2px solid;
+  border-image: linear-gradient(
+      70deg,
+      var(--gradient-white),
+      var(--gradient-blue)
+    )
+    1;
+  padding: 10px 15px;
+}
+textarea {
+  display: block;
+  width: 80%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.379);
+  background-color: transparent;
+}
+.formulaire input[type="submit"] {
+  display: block;
+  width: 180px;
+  margin-top: 25px;
+  margin-left: 230px;
+  padding: 15px 0;
+  font-size: 12px;
+  background: linear-gradient(
+    80deg,
+    var(--gradient-white),
+    var(--gradient-red)
+  );
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+/* design pour la citation */
+.container {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 60%;
+  margin-top: 150px;
+}
+.guillemet1 {
+  float: left;
+}
+.guillemet2 {
+  float: right;
+}
+.citation {
+  font-size: 12px;
+  padding-top: 50px;
+  margin-right: 100px;
+}
+.darknight {
+  font-size: 10px;
+  opacity: 40%;
+  margin-top: 10px;
+  /* width: 80%;
+    margin-left: 138px; */
+}
+.petits-cercles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-top: 15px;
+  margin-left: 20px;
+  border: 2px solid var(--blue);
+}
+
+/* design pour le footer */
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.disclamer img {
+  width: 20px;
+  margin-right: 10px;
+}
+.disclamer {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+}
+.logo-footer {
+  text-align: center;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-item img {
+  width: 30px;
+  margin-right: 10px;
+}
+.social-item1 img {
+  width: 20px;
+  padding-right: 7px;
+}

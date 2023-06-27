@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "font-h1med";
+  src: url(./Assets/fonts/Rajdhani-Medium.ttf);
+}
+@font-face {
+  font-family: "font-h2bold";
+  src: url(./Assets/fonts/Rajdhani-Bold.ttf);
+}
+@font-face {
+  font-family: "font-txt";
+  src: url(./Assets/fonts/SpaceGrotesk-Regular.ttf);
+}
+:root {
+  --yellow-color: #ffff00;
+  --yellow-light: #f8f184;
+}
+/* paramètres généraux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "font-h1med", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+header {
+  background: url(./Assets/img/Batgame_1.png) center/cover;
+  background-color: #0a0a0a;
+  height: 800px;
+}
+body {
+  color: #ffffff;
+  background: #0a0a0a;
+  font-family: "font-txt", sans-serif;
+  font-weight: 300;
+}
+.up-bar {
+  border-top: #bcbbbd 1px solid;
+  position: relative;
+  top: 132px;
+  left: 102px;
+  width: 84%;
+}
+.left-bar {
+  border: #bcbbbd 1px solid;
+  position: relative;
+  right: 655px;
+  rotate: 90deg;
+}
+.right-bar {
+  border: #bcbbbd 1px solid;
+  position: relative;
+  left: 618px;
+  rotate: 90deg;
+}
+/* paramètres pour la partie header */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+li {
+  margin-left: 45px;
+}
+nav ul a {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "font-h1med";
+  text-transform: uppercase;
+}
+nav ul a:hover {
+  color: var(--yellow-color);
+}
+.logo:hover {
+  filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg)
+    brightness(109%) contrast(104%);
+}
