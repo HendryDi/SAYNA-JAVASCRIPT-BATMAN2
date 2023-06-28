@@ -13,6 +13,7 @@
 :root {
   --yellow-color: #ffff00;
   --yellow-light: #f8f184;
+  --gradient-white: #eddebf69;
 }
 /* paramètres généraux */
 * {
@@ -33,28 +34,35 @@ header {
 }
 body {
   color: #ffffff;
-  background: #0a0a0a;
+  background: #000000;
   font-family: "font-txt", sans-serif;
   font-weight: 300;
 }
 .up-bar {
-  border-top: #bcbbbd 1px solid;
+  opacity: 40%;
+  border-top: #bcbbbd 4px solid;
   position: relative;
   top: 132px;
   left: 102px;
   width: 84%;
 }
 .left-bar {
-  border: #bcbbbd 1px solid;
-  position: relative;
-  right: 655px;
-  rotate: 90deg;
+  opacity: 20%;
+  position: fixed;
+  top: 0;
+  right: 140px;
+  height: 100%;
+  width: 2px;
+  background-color: rgb(149, 149, 149);
 }
 .right-bar {
-  border: #bcbbbd 1px solid;
-  position: relative;
-  left: 618px;
-  rotate: 90deg;
+  opacity: 20%;
+  position: fixed;
+  top: 0;
+  left: 102px;
+  height: 100%;
+  width: 2px;
+  background-color: rgb(149, 149, 149);
 }
 /* paramètres pour la partie header */
 nav {
@@ -85,4 +93,87 @@ nav ul a:hover {
 .logo:hover {
   filter: invert(4%) sepia(100%) saturate(1680%) hue-rotate(352deg)
     brightness(109%) contrast(104%);
+}
+.preorder {
+  margin-top: 200px;
+  margin-left: 150px;
+}
+.preorder h1 {
+  font-size: 56px;
+}
+/* design pour le scroll avec logo réseaux sociaux */
+.scroll {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  right: 90px;
+  top: 230px;
+}
+.scroll .social {
+  margin-top: 15px;
+}
+/* design pour la flèche bas */
+.flechebas {
+  display: block;
+  margin: 100px auto;
+  margin-left: 50%;
+}
+/* design pour la partie quiz */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+main div {
+  margin-top: 20px;
+}
+.startquizz {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+  font-family: "font-h2bold";
+  font-size: 15px;
+  padding: 10px 30px;
+  background: linear-gradient(
+    80deg,
+    var(--gradient-white),
+    var(--yellow-light)
+  );
+  box-shadow: var(--black2) 3px 3px 40px;
+  margin: 100px auto;
+}
+/* design pour le footer */
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.disclamer img {
+  width: 20px;
+  margin-right: 10px;
+}
+.disclamer {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+}
+.logo-footer {
+  text-align: center;
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-item img {
+  width: 30px;
+  margin-right: 10px;
+}
+.social-item1 img {
+  width: 20px;
+  padding-right: 7px;
 }
