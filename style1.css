@@ -14,6 +14,7 @@
   --yellow-color: #ffff00;
   --yellow-light: #f8f184;
   --gradient-white: #eddebf69;
+  --orange: #f3942e;
 }
 /* paramètres généraux */
 * {
@@ -73,11 +74,11 @@ nav {
   width: 80%;
   margin: 0 auto;
 }
-ul {
+nav ul {
   list-style: none;
   display: flex;
 }
-li {
+nav li {
   margin-left: 45px;
 }
 nav ul a {
@@ -101,6 +102,7 @@ nav ul a:hover {
 .preorder h1 {
   font-size: 56px;
 }
+
 /* design pour le scroll avec logo réseaux sociaux */
 .scroll {
   display: flex;
@@ -119,7 +121,60 @@ nav ul a:hover {
   margin: 100px auto;
   margin-left: 50%;
 }
-/* design pour la partie quiz */
+/* design pour le quiz */
+/* .prequiz {
+  text-align: center;
+  margin: 20px 0;
+} */
+
+.quiz-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.quiz-header {
+  font-family: "font-txt";
+  font-size: 22px;
+  margin-top: 20px;
+}
+.quiz-contain {
+  padding: 120px;
+  font-family: "font-txt";
+  font-size: 15px;
+}
+.quiz-contain p {
+  margin: 15px auto;
+}
+.quiz-contain ul {
+  list-style: none;
+}
+.quiz-contain li {
+  background-color: #bcbbbd;
+  margin-bottom: 10px;
+}
+ul li label {
+  cursor: pointer;
+}
+button {
+  background-color: none;
+  border-color: none;
+  text-transform: uppercase;
+  font-family: "font-txt";
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+button:hover {
+  color: #ffffff;
+  background: linear-gradient(80deg, var(--gradient-white), var(--orange));
+}
+
+/* design pour la partie quiz
 main {
   display: flex;
   flex-direction: column;
@@ -145,7 +200,7 @@ main div {
   );
   box-shadow: var(--black2) 3px 3px 40px;
   margin: 100px auto;
-}
+} */
 /* design pour le footer */
 
 footer {

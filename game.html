@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Batman2</title>
+    <title>Projet Fil Rouge Batman2</title>
   </head>
   <link rel="stylesheet" href="./style1.css" />
   <body>
@@ -43,18 +43,30 @@
     <div class="flechebas">
       <img src="./Assets/logo/flèche_down_header.png" alt="flèchebas" />
     </div>
-    <div class="left-bar"></div>
-    <div class="right-bar"></div>
     <main>
-      <!-- section pour la partie quizz -->
-      <div class="prequiz">
-        <h1>connaissez vous bien le chevalier noir ?</h1>
-      </div>
-      <div class="quizz">
-        <img src="./Assets/img/Batgame_2.png" alt="photo de batman2" />
-      </div>
-      <div class="startquizz">
-        <h2>Démarrer le quiz</h2>
+      <div class="quiz-container" id="quiz">
+        <div class="quiz-header"></div>
+        <div class="quiz-contain">
+          <h3 id="question">Question text</h3>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer" />
+              <label for="a" id="a_text">Answer</label>
+            </li>
+
+            <li>
+              <input type="radio" name="answer" id="b" class="answer" />
+              <label for="b" id="b_text">Answer</label>
+            </li>
+
+            <li>
+              <input type="radio" name="answer" id="c" class="answer" />
+              <label for="c" id="c_text">Answer</label>
+            </li>
+          </ul>
+        </div>
+
+        <button id="submitBtn">Question Suivante</button>
       </div>
     </main>
 
@@ -81,5 +93,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
