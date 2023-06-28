@@ -276,8 +276,12 @@ nav ul a:hover {
   text-align: left;
   margin-top: 20px;
 }
-.trailer {
-  margin: 50px 250px;
+
+.trailer video {
+  width: 50%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: 430px;
 }
 /* design de la partie contact avec le formulaire */
 
