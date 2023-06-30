@@ -130,6 +130,18 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const submitBtn = document.getElementById("submitBtn");
 
+/*demarer le quiz */
+
+function startQuiz() {
+  const quizStart = document.querySelector(".start-quiz");
+  const btnStart = document.querySelector(".startBtn");
+  const showFirstQue = document.querySelector(".quiz-container");
+
+  quizStart.style.display = "none";
+  btnStart.style.display = "none";
+  showFirstQue.style.display = "flex";
+}
+
 let currentQuiz = 0;
 let score = 0;
 

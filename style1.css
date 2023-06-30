@@ -122,10 +122,18 @@ nav ul a:hover {
   margin-left: 50%;
 }
 /* design pour le quiz */
-/* .prequiz {
+
+.start-quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  margin: 20px 0;
-} */
+}
+
+.startBtn {
+  margin-top: 20px;
+}
 
 .quiz-container {
   display: flex;
@@ -136,6 +144,7 @@ nav ul a:hover {
   height: 500px;
   margin: 0 auto;
   overflow: hidden;
+  display: none;
 }
 .quiz-header {
   font-family: "font-txt";
@@ -174,33 +183,6 @@ button:hover {
   background: linear-gradient(80deg, var(--gradient-white), var(--orange));
 }
 
-/* design pour la partie quiz
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-main div {
-  margin-top: 20px;
-}
-.startquizz {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--white);
-  font-family: "font-h2bold";
-  font-size: 15px;
-  padding: 10px 30px;
-  background: linear-gradient(
-    80deg,
-    var(--gradient-white),
-    var(--yellow-light)
-  );
-  box-shadow: var(--black2) 3px 3px 40px;
-  margin: 100px auto;
-} */
 /* design pour le footer */
 
 footer {
