@@ -144,6 +144,7 @@ function startQuiz() {
 
 let currentQuiz = 0;
 let score = 0;
+let questionNumberValue = 1;
 
 loadQuiz();
 

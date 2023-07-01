@@ -148,13 +148,16 @@ nav ul a:hover {
 }
 .quiz-header {
   font-family: "font-txt";
-  font-size: 22px;
+  font-size: 32px;
   margin-top: 20px;
 }
 .quiz-contain {
   padding: 120px;
   font-family: "font-txt";
   font-size: 15px;
+}
+.quiz-contain h3 {
+  margin: 10px 0;
 }
 .quiz-contain p {
   margin: 15px auto;
