@@ -231,3 +231,21 @@ document.querySelector("#submitBtn").addEventListener("click", function () {
   imgActive += 1;
   images[imgActive].classList.remove("hidden");
 });
+
+// pour scroller la page de haut en bas
+const scrollBtnUp = document.querySelector(".scroll img:first-of-type");
+const scrollBtnDown = document.querySelector(".scroll img:last-of-type");
+
+scrollBtnUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+scrollBtnDown.addEventListener("click", () => {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth",
+  });
+});
