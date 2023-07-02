@@ -1,6 +1,5 @@
 const quizData = [
   {
-    number: "1/15",
     question: "Quel est l’autre nom de l’Homme-Mystère ?",
     a: "Le  Sphinx",
     b: "Saphir",
@@ -8,7 +7,6 @@ const quizData = [
     correct: "a",
   },
   {
-    number: "2/15",
     question: "Quelle est l’ancienne profession de Harley Quinn ?",
     a: "Infirmière",
     b: "Psychiatre",
@@ -16,7 +14,6 @@ const quizData = [
     correct: "b",
   },
   {
-    number: "3/15",
     question: "Quel est l’objet fétiche de Double Face ?",
     a: "Une pièce",
     b: "Un livre",
@@ -24,79 +21,6 @@ const quizData = [
     correct: "a",
   },
   {
-    number: "4/15",
-    question: "Quelle ville Batman défend-il ?",
-    a: "Gotham City",
-    b: "Starling City",
-    c: "Hell’s Kitchen",
-    correct: "a",
-  },
-  {
-    number: "5/15",
-    question: "Tim Burton a réalisé deux Batman, qui jouait Batman ?",
-    a: "Georges Clooney",
-    b: "Val Kilmer",
-    c: "Mickael Keaton",
-    correct: "c",
-  },
-  {
-    number: "6/15",
-    question: "Dans son premier Batman (1989) Jack Nicholson jouait :",
-    a: "Le Pingouin",
-    b: "L’Homme Mystère",
-    c: "Le Joker",
-    correct: "c",
-  },
-  {
-    number: "7/15",
-    question: "Quel est le prénom des parents du jeune Bruce Wayne ?",
-    a: "Thomas et Martha",
-    b: "Elaine et Georges",
-    c: "Martha et James",
-    correct: "a",
-  },
-  {
-    number: "8/15",
-    question: "Qui interprète le Joker en 2008 ?",
-    a: "Heather Legder",
-    b: "Haeth Ledger",
-    c: "Heath Ledger",
-    correct: "c",
-  },
-  {
-    number: "9/15",
-    question: "En quelle année Robin fait il sa première apparition ?",
-    a: "1940",
-    b: "1936",
-    c: "1941",
-    correct: "a",
-  },
-  {
-    number: "10/15",
-    question: "Qui est la fille de Batman et Catwoman (Earth - 2) ?",
-    a: "Oracle",
-    b: "Huntress",
-    c: "Black  Canary",
-    correct: "b",
-  },
-  {
-    number: "11/15",
-    question: "Qui est Jonathan Crane ?",
-    a: "L’Épouvantail",
-    b: "Le Joker",
-    c: "Hugo  Strange",
-    correct: "a",
-  },
-  {
-    number: "12/15",
-    question: "Batman c’est aussi le nom d’une ville en...",
-    a: "Turquie",
-    b: "Islande",
-    c: "Allemagne",
-    correct: "a",
-  },
-  {
-    number: "13/15",
     question: "Qui a produit Batman en 1964 ?",
     a: "Stanley Kubrick",
     b: "Andy Warhol",
@@ -104,7 +28,13 @@ const quizData = [
     correct: "b",
   },
   {
-    number: "14/15",
+    question: "Batman c’est aussi le nom d’une ville en...",
+    a: "Turquie",
+    b: "Islande",
+    c: "Allemagne",
+    correct: "a",
+  },
+  {
     question: "Quel vilain apparaît pour la première fois dans le Batman 232 ?",
     a: "Le Pingouin",
     b: "Ra’s al Ghul",
@@ -112,13 +42,69 @@ const quizData = [
     correct: "",
   },
   {
-    number: "15/15",
+    question: "Quelle ville Batman défend-il ?",
+    a: "Gotham City",
+    b: "Starling City",
+    c: "Hell’s Kitchen",
+    correct: "a",
+  },
+
+  {
+    question: "Tim Burton a réalisé deux Batman, qui jouait Batman ?",
+    a: "Georges Clooney",
+    b: "Val Kilmer",
+    c: "Mickael Keaton",
+    correct: "c",
+  },
+  {
+    question: "Dans son premier Batman (1989) Jack Nicholson jouait :",
+    a: "Le Pingouin",
+    b: "L’Homme Mystère",
+    c: "Le Joker",
+    correct: "c",
+  },
+  {
+    question: "Qui est Jonathan Crane ?",
+    a: "L’Épouvantail",
+    b: "Le Joker",
+    c: "Hugo  Strange",
+    correct: "a",
+  },
+  {
     question:
       "Qui  est  l’interprète  de  Catwoman  dans  le  nouveau Batman de Matt Reeves (2022) ?",
     a: "Emma Watson",
     b: "Gigi Hadid",
     c: "Zoë Kravitz",
     correct: "c",
+  },
+  {
+    question: "Quel est le prénom des parents du jeune Bruce Wayne ?",
+    a: "Thomas et Martha",
+    b: "Elaine et Georges",
+    c: "Martha et James",
+    correct: "a",
+  },
+  {
+    question: "Qui interprète le Joker en 2008 ?",
+    a: "Heather Legder",
+    b: "Haeth Ledger",
+    c: "Heath Ledger",
+    correct: "c",
+  },
+  {
+    question: "En quelle année Robin fait il sa première apparition ?",
+    a: "1940",
+    b: "1936",
+    c: "1941",
+    correct: "a",
+  },
+  {
+    question: "Qui est la fille de Batman et Catwoman (Earth - 2) ?",
+    a: "Oracle",
+    b: "Huntress",
+    c: "Black  Canary",
+    correct: "b",
   },
 ];
 
@@ -131,7 +117,7 @@ const c_text = document.getElementById("c_text");
 const submitBtn = document.getElementById("submitBtn");
 const questionNumber = document.getElementById("progress");
 
-/*demarer le quiz */
+// demarer le quiz
 
 function startQuiz() {
   const quizStart = document.querySelector(".start-quiz");
@@ -142,6 +128,8 @@ function startQuiz() {
   btnStart.style.display = "none";
   showFirstQue.style.display = "flex";
 }
+
+// la partie quiz
 
 let currentQuiz = 0;
 let score = 0;
@@ -198,4 +186,19 @@ submitBtn.addEventListener("click", () => {
         `;
     }
   }
+});
+
+const images = document.querySelectorAll("#galery img");
+let imgActive = 0;
+
+// Masquer les images sauf la première
+for (let i = 1; i < images.length; i += 1) {
+  images[i].classList.add("hidden");
+}
+
+// Clic sur le bouton question suivante
+document.querySelector("#submitBtn").addEventListener("click", function () {
+  images[imgActive].classList.add("hidden");
+  imgActive += 1;
+  images[imgActive].classList.remove("hidden");
 });

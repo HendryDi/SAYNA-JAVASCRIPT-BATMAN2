@@ -149,12 +149,13 @@ nav ul a:hover {
 .quiz-header {
   font-family: "font-txt";
   font-size: 32px;
-  margin-top: 20px;
+  margin-bottom: 150px;
+  /* margin-top: 20px; */
 }
 .quiz-contain {
-  padding: 120px;
   font-family: "font-txt";
   font-size: 15px;
+  display: flex;
 }
 .quiz-contain h3 {
   margin: 10px 0;
@@ -169,6 +170,21 @@ nav ul a:hover {
   background-color: #bcbbbd;
   margin-bottom: 10px;
 }
+.quiz-image img {
+  width: 100px;
+  margin-right: 50px;
+}
+#galery img.hidden {
+  display: none;
+}
+.quiz-contain1 {
+  display: block;
+  margin-right: 150px;
+}
+.quiz-contain1 p {
+  font-family: "font-txt";
+  font-size: 14px;
+}
 ul li label {
   cursor: pointer;
 }
@@ -180,6 +196,7 @@ button {
   font-size: 15px;
   cursor: pointer;
   padding: 10px 30px;
+  margin-top: 20px;
 }
 button:hover {
   color: #ffffff;
