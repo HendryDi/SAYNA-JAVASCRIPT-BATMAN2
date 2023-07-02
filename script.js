@@ -177,13 +177,42 @@ submitBtn.addEventListener("click", () => {
 
     currentQuiz++;
 
+    // Résultat du quiz
+
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      quiz.innerHTML = `
-          <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-          <button onclick="location.reload()">Reload</button>
+      if (score >= 15) {
+        quiz.innerHTML = `
+          <h2> ${score} / ${quizData.length} Bravo !</h2>
+          <p>Vous êtes véritablement un super fan de l'univers de Batman ! 
+          Comics, films, rien ne vous échappe. Bruce Wayne a de quoi être fier, Gotham est en paix
+          et Batman peut prendre sa retraite, vous veillez aux grains !</p>
+          <button onclick="location.reload()">Recommencer le Quiz</button>
         `;
+      } else if (score >= 10) {
+        quiz.innerHTML = `
+          <h2> ${score} / ${quizData.length} Pas mal</h2>
+          <p>Encore un peu d'entrainement avec le Chevalier Noir vous serait bénéfique, 
+          mais vous pouvez marcher la tête haute vos connaissances sont là.
+          A vous de les consolider, foncez, Goham est votre terrain de chasse !</p>
+          <button onclick="location.reload()">Recommencer le Quiz</button>
+        `;
+      } else if (score >= 5) {
+        quiz.innerHTML = `
+          <h2>${score} / ${quizData.length} C'est pas tout à fait ça...</h2>
+          <p>Oula ! Heureusement que le Riddler est sous les verrous... Il faut que vous vous repassiez les films,
+          cette fois en enlevant peut-être le masque qui vous a bloqué la vue ! Aller, rien n'est perdu !</p>
+          <button onclick="location.reload()">Recommencer le Quiz</button>
+        `;
+      } else {
+        quiz.innerHTML = `
+          <h2> ${score} / ${quizData.length} C'est pas tout à fait ça...</h2>
+          <p>Oula ! Heureusement que le Riddler est sous les verrous... Il faut que vous vous repassiez les films,
+          cette fois en enlevant peut-être le masque qui vous a bloqué la vue ! Aller, rien n'est perdu !</p>
+          <button onclick="location.reload()">Recommencer le Quiz</button>
+        `;
+      }
     }
   }
 });
