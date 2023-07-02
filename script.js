@@ -129,6 +129,7 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const submitBtn = document.getElementById("submitBtn");
+const questionNumber = document.getElementById("progress");
 
 /*demarer le quiz */
 
@@ -144,7 +145,6 @@ function startQuiz() {
 
 let currentQuiz = 0;
 let score = 0;
-let questionNumberValue = 1;
 
 loadQuiz();
 
@@ -157,6 +157,10 @@ function loadQuiz() {
   a_text.innerText = currentQuizData.a;
   b_text.innerText = currentQuizData.b;
   c_text.innerText = currentQuizData.c;
+
+  const currentQuestionNumber = currentQuiz + 1;
+  const totalQuestions = quizData.length;
+  questionNumber.innerText = ` ${currentQuestionNumber} / ${totalQuestions}`;
 }
 
 function deselectAnswers() {
