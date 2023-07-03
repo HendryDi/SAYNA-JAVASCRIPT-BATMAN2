@@ -22,6 +22,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 h1 {
   font-family: "font-h1med", sans-serif;
   font-size: 36px;
