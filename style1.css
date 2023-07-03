@@ -39,6 +39,7 @@ body {
   font-family: "font-txt", sans-serif;
   font-weight: 300;
 }
+
 .up-bar {
   opacity: 40%;
   border-top: #bcbbbd 4px solid;
@@ -202,6 +203,7 @@ button:hover {
   color: #ffffff;
   background: linear-gradient(80deg, var(--gradient-white), var(--orange));
 }
+/* design pour les pop-ups */
 
 /* design pour le footer */
 
